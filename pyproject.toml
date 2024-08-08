@@ -1,0 +1,15 @@
+[tool.poetry]
+package-mode = false
+name = "otel-asgi-issue"
+version = "0.1.0"
+description = ""
+authors = ["emil-vdw <vdwemil@protonmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+uvicorn = {extras = ["standard"], version = "^0.30.5"}
+fastapi = "0.111.0"
+opentelemetry-distro = "0.43b0"
+opentelemetry-sdk = "1.22.0"
+opentelemetry-exporter-otlp = "^1.22.0"
