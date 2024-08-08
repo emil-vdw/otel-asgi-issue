@@ -9,4 +9,4 @@ OTEL_TRACES_EXPORTER="console" \
                     OTEL_TRACES_SAMPLER="parentbased_traceidratio" poetry run opentelemetry-instrument \
                     --traces_exporter console \
                     --service_name otel-asgi-issue \
-                    uvicorn otel_asgi_issue.app:app
+                    uvicorn otel_asgi_issue.app:app --workers 4
